@@ -5,7 +5,7 @@ import { signIn, useSession, signOut } from "next-auth/react";
 
 export default function Signup() {
   const { data: session } = useSession();
-  console.error(session);
+  console.error("signup " +session);
   return (
     <div style={{ height: 60, background: "white", padding: 10 }}>
       {session ? (
