@@ -11,7 +11,7 @@ export default function Signup() {
       {session ? (
         <div style={{ display: "flex", justifyContent: "space-between" }}>
           <Typography variant="h4" style={{ color: "black" }}>
-            {session.user?.email}
+            {session.user?.name}
           </Typography>
           <div>
             <Button variant="contained" onClick={() => signOut()}>
