@@ -8,7 +8,6 @@ import { NextResponse } from "next/server";
 // console.log("NEXTAUTH_URL:", process.env.NEXTAUTH_URL);
 // console.log("nextAUTH_SECRET:", process.env.NEXTAUTH_SECRET);
 
-// Define your User type if needed
 interface User {
   id: string;
   email: string;
