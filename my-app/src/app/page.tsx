@@ -1,23 +1,16 @@
-import { getSession } from 'next-auth/react';
-import Signup from './components/Signup';
+"use client";
 
-async function getData() {
-  const session = await getSession();
-  return session;
-}
+import { Button, Typography } from "@mui/material";
+import { signIn, useSession, signOut } from "next-auth/react";
+import Providers from "./components/Providers"
+import Signup from "./components/Signup"
 
-export default async function Home() {
-   const session = await getData();
-
+export default function Home() {
+//   const { data: session } = useSession();
+//   console.error(session);
   return (
-    <div>
-      {/* <header>
-        <Signup />
-      </header> */}
-      <div>
-        hi
-        Welcome, {session?.user?.name || 'Guest'}
-      </div>
+  <div>
+    hello
     </div>
   );
 }
