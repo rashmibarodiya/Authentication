@@ -9,6 +9,8 @@ interface User {
   name?: string;
 }
 
+//google credential from google cloud
+
 export const authOptions: NextAuthOptions = {
   providers: [
     GoogleProvider({
